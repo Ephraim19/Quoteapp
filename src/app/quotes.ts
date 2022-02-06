@@ -5,7 +5,8 @@ export class Quotes {
     public author: string,
     public name: string,
     public upvotes: number,
-    public downvotes: number
+    public downvotes: number,
+    public timePassed: Date
   ) {
     this.id = id;
     this.quote = quote;
@@ -13,5 +14,6 @@ export class Quotes {
     this.name = name;
     this.upvotes = upvotes;
     this.downvotes = downvotes;
+    this.timePassed = timePassed;
   }
 }

@@ -14,7 +14,8 @@ export class QuotesComponent implements OnInit {
       'Nelson Mandela',
       'Ephraim',
       2,
-      0
+      0,
+      new Date(2023,12,1)
     ),
     new Quotes(
       2,
@@ -22,7 +23,8 @@ export class QuotesComponent implements OnInit {
       'Walt Disney',
       'ephraim',
       3,
-      1
+      1,
+      new Date(2022,1,2)
     ),
   ];
 
