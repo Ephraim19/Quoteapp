@@ -12,8 +12,8 @@
   </div>
 
   <label for="name">Your name:</label>
-  <input type="text" id="name" [(ngModel)]="newQuote.votes" name="votes" #votes='ngModel' required />
-  <div [hidden]="votes.valid || votes.pristine" class="alert alert-danger">
+  <input type="text" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required />
+  <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
     <p>Please enter your name</p>
   </div>
   <button type="submit">submit</button>

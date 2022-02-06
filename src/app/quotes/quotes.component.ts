@@ -4,23 +4,33 @@ import { Quotes } from '../quotes';
 @Component({
   selector: 'app-quotes',
   templateUrl: './quotes.component.html',
-  styleUrls: ['./quotes.component.css']
+  styleUrls: ['./quotes.component.css'],
 })
 export class QuotesComponent implements OnInit {
-  quotes :Quotes[] =[
-    new Quotes(1,'love is great','eph',2),
-    new Quotes(2,'Life is great','ephraim', 3)
+  quotes: Quotes[] = [
+    new Quotes(
+      1,
+      'The greatest glory in living lies not in never falling, but in rising every time we fall',
+      'Nelson Mandela',
+      'Ephraim',
+      2,
+      0
+    ),
+    new Quotes(
+      2,
+      'The way to get started is to quit talking and begin doing',
+      'Walt Disney',
+      'ephraim',
+      3,
+      1
+    ),
+  ];
 
-  ]
-
-  moreQuotes(anotherQuote:any){
-    anotherQuote.id = this.quotes.length + 1
-    this.quotes.push(anotherQuote)
-    console.log('yooh')
+  moreQuotes(anotherQuote: any) {
+    anotherQuote.id = this.quotes.length + 1;
+    this.quotes.push(anotherQuote);
   }
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
