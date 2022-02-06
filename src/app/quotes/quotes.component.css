@@ -5,3 +5,12 @@
     background-color: yellow;
     padding: 1%;
 }
+
+.quote {
+    font-weight: bolder;
+}
+
+.quote-detail {
+    margin: 3%;
+    background-color: white;
+}

@@ -7,18 +7,20 @@
     <title>Quotes</title>
   </head>
   <body>
-    <div class="heading" >
+    <div class="heading">
       <h1>Quotes for you</h1>
     </div>
-    <div>
-      <ul *ngFor="let quote of quotes"></ul>
-      <ul>
-        <li *ngFor="let quote of quotes">
-          {{ quote.quote }}
-          <app-quote-details [quote]="quote"></app-quote-details>
-        </li>
-      </ul>
-      <app-quote-form (addQuote)="moreQuotes($event)"></app-quote-form>
-    </div>
+      <div class="quote-detail" >
+        <ul *ngFor="let quote of quotes"></ul>
+        <ul>
+          <li *ngFor="let quote of quotes">
+            <span class="quote" >The Quote: </span>{{ quote.quote }}
+            <app-quote-details [quote]="quote"></app-quote-details>
+            <hr>
+          </li>
+        </ul>
+      </div>
+
+    <app-quote-form (addQuote)="moreQuotes($event)"></app-quote-form>
   </body>
 </html>
