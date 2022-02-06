@@ -1,10 +1,14 @@
-import { Directive } from '@angular/core';
+import { Directive, ElementRef } from '@angular/core';
 
 @Directive({
   selector: '[appManyVotes]'
 })
 export class ManyVotesDirective {
 
-  constructor() { }
+  constructor(private manyUpVotes:ElementRef) {
+    this.manyUpVotes.nativeElement.style.backgroundColor='red';
+   }
+
+
 
 }
