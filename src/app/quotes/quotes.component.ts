@@ -39,6 +39,19 @@ export class QuotesComponent implements OnInit {
       this.quotes.splice(index, 1);
     }
   }
+
+  voteMore(upVotes: boolean, index: number) {
+    new Quotes(
+      3,
+      'The greatest glory in living lies not in never falling, but in rising every time we fall',
+      'Nelson Mandela',
+      'Ephraim',
+      2,
+      0,
+      new Date(2022, 1, 1)
+    );
+    
+  }
   constructor() {}
 
   ngOnInit(): void {}
