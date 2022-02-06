@@ -1,9 +1,15 @@
-<form>
+<form #quoteForm ='ngForm' >
   <label for="quote">Quote:</label>
-  <input type="text" id="quote" />
+  <input type="text" id="quote" [(ngModel)]="newQuote.quote" name="quote" #quote='ngModel' required  />
+  <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+    <p>Please enter a quote</p>
+  </div>
 
   <label for="author">Author:</label>
-  <input type="text" id="author" />
+  <input type="text" id="author" [(ngModel)]="newQuote.author" name="author" #author='ngModel' required />
+  <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+    <p>Please the name of the author</p>
+  </div>
 
   <label for="name">Your name:</label>
   <input type="text" id="name" />
