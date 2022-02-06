@@ -15,7 +15,7 @@ export class QuotesComponent implements OnInit {
       'Ephraim',
       2,
       0,
-      new Date(2023,12,1)
+      new Date(2022, 1, 1)
     ),
     new Quotes(
       2,
@@ -24,13 +24,23 @@ export class QuotesComponent implements OnInit {
       'ephraim',
       3,
       1,
-      new Date(2022,1,2)
+      new Date(2022, 2, 5)
     ),
   ];
 
   moreQuotes(anotherQuote: any) {
     anotherQuote.id = this.quotes.length + 1;
     this.quotes.push(anotherQuote);
+  }
+
+  deleteQuotes(isComplete:Boolean, index:number){
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}?`)
+
+      if (toDelete){
+        this.quotes.splice(index,1)
+      }
+    }
   }
   constructor() {}
 
