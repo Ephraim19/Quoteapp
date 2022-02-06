@@ -1,20 +1,70 @@
-<form #quoteForm ='ngForm' (ngSubmit)="submitQuote()" >
-  <label for="quote">Quote:</label>
-  <input type="text" id="quote" [(ngModel)]="newQuote.quote" name="quote" #quote='ngModel' required  />
-  <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
-    <p>Please enter a quote</p>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h4 class="head">Add a quote</h4>
 
-  <label for="author">Author:</label>
-  <input type="text" id="author" [(ngModel)]="newQuote.author" name="author" #author='ngModel' required />
-  <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
-    <p>Please enter the name of the author</p>
-  </div>
-
-  <label for="name">Your name:</label>
-  <input type="text" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required />
-  <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
-    <p>Please enter your name</p>
-  </div>
-  <button type="submit">submit</button>
-</form>
+      <form #quoteForm="ngForm" (ngSubmit)="submitQuote()">
+        <div class="form-group">
+          <label for="quote">Quote:</label>
+          <input
+            type="text"
+            id="quote"
+            [(ngModel)]="newQuote.quote"
+            name="quote"
+            #quote="ngModel"
+            required
+            class="form-control"
+          />
+          <div
+            [hidden]="quote.valid || quote.pristine"
+            class="alert alert-danger"
+          >
+            <p>Please enter a quote</p>
+          </div>
+        </div>
+        <div class="form-group">
+        <label for="author">Author:</label>
+        <input
+          type="text"
+          id="author"
+          class="form-control"
+          [(ngModel)]="newQuote.author"
+          name="author"
+          #author="ngModel"
+          required
+        />
+        <div
+          [hidden]="author.valid || author.pristine"
+          class="alert alert-danger"
+        >
+          <p>Please enter the name of the author</p>
+        </div>
+        </div>
+        <div class="form-group">
+        <label for="name">Your name:</label>
+        <input
+          type="text"
+          id="name"
+          class="form-control"
+          [(ngModel)]="newQuote.name"
+          name="name"
+          #name="ngModel"
+          required
+        />
+        <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+          <p>Please enter your name</p>
+        </div>
+        </div>
+        <br>
+        <button class="btn btn-success" type="submit">submit</button>
+      </form>
+    </div>
+  </body>
+</html>
