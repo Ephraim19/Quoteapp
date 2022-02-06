@@ -1,5 +1,21 @@
-<ul *ngFor=" let quote of quotes" >
-    <li>{{ quote.quote }}</li>
-</ul>
-<app-quote-details></app-quote-details>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quotes</title>
+  </head>
+  <body>
+    <ul *ngFor="let quote of quotes">
 
+    </ul>
+    <ul>
+        <li *ngFor='let quote of quotes'>
+          {{quote.quote}}
+          <app-quote-details [quote]='quote'></app-quote-details>
+        </li>
+      </ul>
+    
+  </body>
+</html>
