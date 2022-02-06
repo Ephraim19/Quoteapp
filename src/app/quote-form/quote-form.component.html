@@ -1,4 +1,4 @@
-<form #quoteForm ='ngForm' >
+<form #quoteForm ='ngForm' (ngSubmit)="submitQuote()" >
   <label for="quote">Quote:</label>
   <input type="text" id="quote" [(ngModel)]="newQuote.quote" name="quote" #quote='ngModel' required  />
   <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
@@ -8,9 +8,12 @@
   <label for="author">Author:</label>
   <input type="text" id="author" [(ngModel)]="newQuote.author" name="author" #author='ngModel' required />
   <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
-    <p>Please the name of the author</p>
+    <p>Please enter the name of the author</p>
   </div>
 
   <label for="name">Your name:</label>
-  <input type="text" id="name" />
+  <input type="text" id="name" [(ngModel)]="newQuote.votes" name="votes" #votes='ngModel' required />
+  <div [hidden]="votes.valid || votes.pristine" class="alert alert-danger">
+    <p>Please enter your name</p>
+  </div>
 </form>
