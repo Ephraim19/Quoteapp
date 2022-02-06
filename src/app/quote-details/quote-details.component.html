@@ -1,7 +1,9 @@
 <li> <span class="quote" >Author:  </span>{{quote.author}}</li>
 <li><span class="quote" >Quote publisher:</span>  {{quote.name}}</li>
-<li appManyVotes > <span class="quote">Upvotes: </span>  {{quote.upvotes}}</li>
-<li><span class="quote" >Downvotes: </span> {{quote.downvotes}}</li>
-<p>This quote was posted {{quote.timePassed|completionDate}} days ago</p>
-<button (click)= 'deleteQuote(true)'>Delete this quote</button>
+<li><p>This quote was posted {{quote.timePassed|completionDate}} days ago</p></li>
+<button class="btn-success" >Upvote </button>  {{quote.upvotes}}
+<button class="btn-success" >Downvote </button> {{quote.downvotes}}
+<br>
+<br>
+<button class="btn-success" (click)= 'deleteQuote(true)'>Delete this quote</button>
 
