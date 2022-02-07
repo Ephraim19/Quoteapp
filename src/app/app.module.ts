@@ -10,6 +10,7 @@ import { GoalFormComponent } from './goal-form/goal-form.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { ManyVotesDirective } from './many-votes.directive';
 import { CompletionDatePipe } from './completion-date.pipe';
+import { UpvotesPipe } from './upvotes.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CompletionDatePipe } from './completion-date.pipe';
     GoalFormComponent,
     QuoteFormComponent,
     ManyVotesDirective,
-    CompletionDatePipe
+    CompletionDatePipe,
+    UpvotesPipe
   ],
   imports: [
     BrowserModule,

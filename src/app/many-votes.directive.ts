@@ -1,4 +1,5 @@
 import { Directive, ElementRef } from '@angular/core';
+import { Action } from 'rxjs/internal/scheduler/Action';
 
 @Directive({
   selector: '[appManyVotes]'
@@ -6,14 +7,9 @@ import { Directive, ElementRef } from '@angular/core';
 export class ManyVotesDirective {
 
   constructor(private manyUpVotes:ElementRef) {
-    this.manyUpVotes.nativeElement.style.backgroundColor='red';
    }
 
-  // private backgrounColor(action:string){
-    //this.manyUpVotes.nativeElement.style.textDecoration=action;
-
-  //}
-
-
-
+  private backgrounColor(action:string){
+    this.manyUpVotes.nativeElement.style.textDecoration=action;
+  }
 }

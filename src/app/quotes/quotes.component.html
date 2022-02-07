@@ -10,11 +10,10 @@
     <div class="heading">
       <h1>Quotes for you</h1>
     </div>
-    <div class="quote-detail">
-      <ul *ngFor="let quote of quotes"></ul>
+    <div class="quote-detail" >
       <ul>
-        <li *ngFor="let quote of quotes">
-          <span class="quote">The Quote: </span>{{ quote.quote }}
+        <li *ngFor="let quote of quotes; let i = index">
+          <p appManyVotes ><span class="quote">The Quote: </span>{{ quote.quote }}</p>
           <app-quote-details
             [quote]="quote"
             (isComplete)="deleteQuotes($event,i)"
