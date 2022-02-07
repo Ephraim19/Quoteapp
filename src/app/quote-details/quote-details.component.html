@@ -11,7 +11,7 @@
     <li><span class="quote">Quote publisher:</span> {{ quote.name }}</li>
     <li>
       <p>
-        This quote was posted {{ quote.timePassed | completionDate }} days ago
+        This quote was posted <span class="quote">{{ quote.timePassed | completionDate }} days ago </span>
       </p>
     </li>
     <button class="btn-success" (click)="upVote(true)" >Upvote</button> {{ quote.upvotes }}
