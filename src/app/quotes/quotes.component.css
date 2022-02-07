@@ -17,6 +17,8 @@
 
 .footer {
     margin-top: 1rem;
-    padding: 5%;
+    padding: 2%;
     background-color: yellow;
+    text-align: center;
+    font-weight: bolder;
 }
