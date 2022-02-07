@@ -15,7 +15,7 @@ export class QuotesComponent implements OnInit {
       'Ephraim',
       0,
       0,
-      new Date(2022, 1, 6)
+      new Date(2021, 12, 1)
     ),
     new Quotes(
       2,
@@ -24,7 +24,7 @@ export class QuotesComponent implements OnInit {
       'ephraim',
       0,
       0,
-      new Date(2022, 1, 10)
+      new Date(2021, 12, 10)
     ),
     new Quotes(
       3,
@@ -51,7 +51,7 @@ export class QuotesComponent implements OnInit {
       'Leon',
       0,
       0,
-      new Date(2022, 1, 5)
+      new Date(2022, 1, 6)
     ),
   ];
 
