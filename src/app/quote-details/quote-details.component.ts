@@ -13,9 +13,11 @@ export class QuoteDetailsComponent implements OnInit {
   deleteQuote(complete:boolean){
     this.isComplete.emit(complete);
   }
+  
 
-  upVote(complete:boolean){
-    this.upVotes.emit(complete)
+  upVote(vote:boolean){
+    this.upVotes.emit(vote)
+    console.log(vote)
   }
 
   constructor() {}

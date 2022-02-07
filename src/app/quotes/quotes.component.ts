@@ -41,16 +41,11 @@ export class QuotesComponent implements OnInit {
   }
 
   voteMore(upVotes: boolean, index: number) {
-    new Quotes(
-      3,
-      'The greatest glory in living lies not in never falling, but in rising every time we fall',
-      'Nelson Mandela',
-      'Ephraim',
-      2,
-      0,
-      new Date(2022, 1, 1)
-    );
-    
+    if(upVotes){
+     let myArray = this.quotes[index]
+     myArray.upvotes += 1
+      console.log(myArray)
+    }    
   }
   constructor() {}
 
