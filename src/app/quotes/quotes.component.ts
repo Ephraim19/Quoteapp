@@ -13,18 +13,45 @@ export class QuotesComponent implements OnInit {
       'The greatest glory in living lies not in never falling, but in rising every time we fall',
       'Nelson Mandela',
       'Ephraim',
-      2,
       0,
-      new Date(2022, 1, 1)
+      0,
+      new Date(2022, 1, 6)
     ),
     new Quotes(
       2,
       'The way to get started is to quit talking and begin doing',
       'Walt Disney',
       'ephraim',
+      0,
+      0,
+      new Date(2022, 1, 10)
+    ),
+    new Quotes(
       3,
-      1,
-      new Date(2022, 2, 5)
+      'Spread love everywhere you go. Let no one ever come to you without leaving happier',
+      'Mother Theresa',
+      'Liz',
+      0,
+      0,
+      new Date(2021, 12, 25)
+    ),
+    new Quotes(
+      4,
+      'The future belongs to those who believe in the beauty of their dreams.',
+      'Eleanor Roosevelt',
+      'Ebenezer',
+      0,
+      0,
+      new Date(2022, 1, 3)
+    ),
+    new Quotes(
+      5,
+      'Tell me and I forget. Teach me and I remember. Involve me and I learn.',
+      'Benjamin Franklin',
+      'Leon',
+      0,
+      0,
+      new Date(2022, 1, 5)
     ),
   ];
 
