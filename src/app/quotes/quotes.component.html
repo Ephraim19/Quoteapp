@@ -10,15 +10,15 @@
     <div class="heading">
       <h1>Quotes for Life</h1>
     </div>
-    <div class="quote-detail" >
+    <div class="quote-detail">
       <ul>
         <li *ngFor="let quote of quotes; let i = index">
-          <p appManyVotes ><span class="quote">The Quote: </span>{{ quote.quote }}</p>
+          <span class="quote">The Quote: </span> <p appManyVotes>{{ quote.quote }}</p>
           <app-quote-details
             [quote]="quote"
-            (isComplete)="deleteQuotes($event,i)"
-            (upVotes)="voteMore($event,i)"
-            (downVotes)="voteLess($event,i)"
+            (isComplete)="deleteQuotes($event, i)"
+            (upVotes)="voteMore($event, i)"
+            (downVotes)="voteLess($event, i)"
           ></app-quote-details>
           <hr />
         </li>
@@ -32,4 +32,3 @@
     </div>
   </body>
 </html>
-
