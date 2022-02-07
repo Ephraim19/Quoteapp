@@ -1,3 +1,9 @@
 .quote {
     font-weight: bolder;
 }
+
+.votes {
+    font-weight: bolder;
+    color: crimson;
+    padding: 1rem;
+}

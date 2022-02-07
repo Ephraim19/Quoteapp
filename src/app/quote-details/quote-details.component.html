@@ -15,8 +15,8 @@
         This quote was posted <span class="quote">{{ quote.timePassed | completionDate }} days ago </span>
       </p>
     </li>
-    <button class="btn-success" (click)="upVote( true )" >Upvote</button> {{ quote.upvotes }}
-    <button class="btn-success" (click)="downVote( true )" >Downvote</button> {{ quote.downvotes }}
+    <button class="btn-success" (click)="upVote( true )" >Upvote</button> <span class="votes" >{{ quote.upvotes }}</span> 
+    <button class="btn-success" (click)="downVote( true )" >Downvote</button> <span class="votes" >{{ quote.downvotes }}</span> 
     <br />
     <br />
     <button class="btn-success" (click)="deleteQuote(true)">
