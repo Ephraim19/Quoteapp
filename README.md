@@ -7,7 +7,8 @@ This is a webpage that offers a platform whereby you can read quotes, add new qu
 * git clone https://github.com/Ephraim19/Quotes-app.git
 * npm install
 * ng serve open
-The live link is ephraim19.github.io/quotes-app/
+##Live link
+https://ephraim19.github.io/Quoteapp/
 ## Technologies used
 Html
 Css
