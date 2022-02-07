@@ -44,7 +44,13 @@ export class QuotesComponent implements OnInit {
     if(upVotes){
      let myArray = this.quotes[index]
      myArray.upvotes += 1
-      console.log(myArray)
+    }    
+  }
+
+  voteLess(downVotes: boolean, index: number) {
+    if(downVotes){
+     let myArray = this.quotes[index]
+     myArray.downvotes += 1
     }    
   }
   constructor() {}

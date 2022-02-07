@@ -16,7 +16,7 @@
       </p>
     </li>
     <button class="btn-success" (click)="upVote( true )" >Upvote</button> {{ quote.upvotes }}
-    <button class="btn-success">Downvote</button> {{ quote.downvotes }}
+    <button class="btn-success" (click)="downVote( true )" >Downvote</button> {{ quote.downvotes }}
     <br />
     <br />
     <button class="btn-success" (click)="deleteQuote(true)">

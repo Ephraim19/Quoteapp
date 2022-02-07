@@ -18,6 +18,7 @@
             [quote]="quote"
             (isComplete)="deleteQuotes($event,i)"
             (upVotes)="voteMore($event,i)"
+            (downVotes)="voteLess($event,i)"
           ></app-quote-details>
           <hr />
         </li>
